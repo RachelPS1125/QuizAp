@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+}
+.title{
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 4rem;
+	text-align: center;
+	margin: 2rem 0;
+}
+.intro{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center
+
+}
+.count{
+	text-align: center
+}
+.button, .start-button{
+	height: 10rem;
+	width: 19rem;
+	margin: 3rem auto;
+	padding: 0;
+}
+.button{
+	margin-top: 2rem;
+}
+.start-button{
+	background-color: #EAC117;
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	padding: 2rem;
+	border-radius: 20% 5%;
+	border: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.-hover:hover{
+	height: 10.2rem;
+	width: 19.2rem;
+	background-color: silver;
+}
+.question, .answer-list, .correct, .count{
+	display: none;
+}
+.question{
+	text-align: center;
+	font-size: 2em;
+}
+.answer-list{
+	background-image: url("../images/Rings.jpg");
+	background-size: 100% 100%;
+	width: 600px;
+	height: 291px;
+	margin: 0 auto;
+}
+.answer-list>li{
+	padding:0;
+	display: inline-block;
+}
+.answer-one, .answer-two, .answer-three{
+	margin-top: 4.5rem;
+	margin-left: 3.5rem;
+	margin-right: 6.8rem;
+}
+.answer-three{
+	margin-right: 0;
+}
+.answer-four, .answer-five{
+	margin-top: 5rem;
+	margin-left: 10rem;
+}
+.correct{
+	text-align: right;
+	margin-right: 5rem;
+}
