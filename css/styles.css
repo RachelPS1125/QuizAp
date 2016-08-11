@@ -75,23 +75,37 @@ body{
 	background-size: 100% 100%;
 	width: 600px;
 	height: 291px;
+	position: relative;
 	margin: 0 auto;
+	padding: 0;
 }
 .answer-list>li{
 	padding:0;
 	display: inline-block;
+	position: absolute;
+	width: 120px;
+	text-align: center;
 }
-.answer-one, .answer-two, .answer-three{
-	margin-top: 5rem;
-	margin-left: 2.5rem;
-	margin-right: 6rem;
+.answer-one{
+	left: 50px;
+}
+.answer-two{
+	left: 240px;
 }
 .answer-three{
-	margin-right: 0;
+	left: 435px;
+}
+.answer-one, .answer-two, .answer-three{
+	top: 75px;
 }
 .answer-four, .answer-five{
-	margin-top: 4.5rem;
-	margin-left: 8.5rem;
+	top: 180px;
+}
+.answer-four{
+	left: 145px;
+}
+.answer-five{
+	left: 340px;
 }
 .-pointer:hover{
 	cursor: pointer;
