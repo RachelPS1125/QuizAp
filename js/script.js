@@ -102,11 +102,7 @@ $(document).ready(function(){
 	$('.next').click(function(){
 		$('.next').hide();
 		$('.explanation').hide();
-		$('.answer-list').show();
-		displayQuestion(questions[questionNum]);
-		questionNum++;
-		console.log(questionNum);
-		if (questionNum == 5){
+		if (questionNum == length){
 			$('.answer-list').hide();
 			$('.restart').show();
 			if (percentCorrect < 50){
@@ -117,7 +113,12 @@ $(document).ready(function(){
 			}else{
 				$('.question').text("So/So Performance, not impressed.")
 			};
-		}
+		}else{
+			$('.answer-list').show();
+			displayQuestion(questions[questionNum]);
+			questionNum++;
+			console.log(questionNum);
+		};
 	});
 	$('.restart').click(function(){
 		startGame();
