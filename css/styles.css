@@ -7,6 +7,7 @@ body{
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
+	text-align: center;
 }
 .title{
 	font-family: 'Reem Kufi', sans-serif;
@@ -21,27 +22,27 @@ body{
 	text-align: center;
 }
 .information{
-	margin-right: 25%;
-	margin-left: 25%;
+	width: 55%;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .information>li{
 	font-size: 1rem;
 	display: inline-block;
+	margin-top: 1rem;
+}
+.question-count{
+	margin-right: 25%
 }
 .number-correct{
-	float: right;
-}
-.button, .start-button{
-	height: 10rem;
-	width: 19rem;
-	margin: 3rem auto;
-	padding: 0;
-}
-.button{
-	margin-top: 2rem;
+	margin-left: 25%;
 }
 .start-button, .restart{
+	height: 10rem;
+	width: 19rem;
+	margin: 3rem;
+	padding: 0;
 	background-color: #EAC117;
 	font-size: 2.5rem;
 	font-weight: bold;
@@ -62,10 +63,11 @@ body{
 .question, .explanation{
 	text-align: center;
 	width: 50%;
-	margin: 0 auto;
+	margin: 2rem auto;
 }
 .question{
 	font-size: 1.5rem;
+	display: block;
 }
 .explanation{
 	font-size: 1rem;
@@ -123,4 +125,11 @@ body{
 }
 .restart{
 	display: none;
+}
+.reference{
+	position: relative;
+	width: 90%;
+	bottom: 0;
+	display: none;
+	margin: 5em auto 1em auto;
 }
