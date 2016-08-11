@@ -10,18 +10,27 @@ body{
 }
 .title{
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 4rem;
+	font-size: 3rem;
 	text-align: center;
-	margin: 2rem 0;
+	margin: 1rem 0;
 }
 .intro{
 	width: 60%;
 	margin: 0 auto;
-	text-align: center
-
+	font-size: 1.2rem;
+	text-align: center;
 }
-.count, .correct{
-	text-align: center
+.information{
+	margin-right: 25%;
+	margin-left: 25%;
+}
+
+.information>li{
+	font-size: 1rem;
+	display: inline-block;
+}
+.number-correct{
+	float: right;
 }
 .button, .start-button{
 	height: 10rem;
@@ -32,7 +41,7 @@ body{
 .button{
 	margin-top: 2rem;
 }
-.start-button{
+.start-button, .restart{
 	background-color: #EAC117;
 	font-size: 2.5rem;
 	font-weight: bold;
@@ -47,12 +56,19 @@ body{
 	width: 19.2rem;
 	background-color: silver;
 }
-.question, .answer-list, .correct, .count{
+.question, .answer-list, .information, .explanation{
 	display: none;
 }
-.question{
+.question, .explanation{
 	text-align: center;
-	font-size: 2em;
+	width: 50%;
+	margin: 0 auto;
+}
+.question{
+	font-size: 1.5rem;
+}
+.explanation{
+	font-size: 1rem;
 }
 .answer-list{
 	background-image: url("../images/Rings.jpg");
@@ -79,4 +95,18 @@ body{
 }
 .-pointer:hover{
 	cursor: pointer;
+}
+.next{
+	background-color: #EAC117;
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	padding: .5rem;
+	border-radius: 5%;
+	border: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	display: none;
+}
+.restart{
+	display: none;
 }
