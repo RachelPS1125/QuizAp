@@ -56,8 +56,8 @@ $(document).ready(function(){
 		};
 		return array;
 	}
-	function randomizeAnswers(currentQuestion){
-		var answers = currentQuestion.wrongAnswers;
+	function randomizeAnswers(currentQuestion, answers){
+		var answers = currentQuestion.wrongAnswers.concat([]);
 		answers = randomize(answers);
 		var randomInsert = Math.floor(Math.random()*(answers.length+1));
 		answers.splice(randomInsert, 0, currentQuestion.correctAnswer);
